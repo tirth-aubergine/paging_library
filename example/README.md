@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(title: Text(widget.title)),
       body: Pagination(
         pageBuilder: (currentListSize) => pageData(currentListSize),
-        itemBuilder: (item) => ListTile(title: Text(item)),
+        itemBuilder: (index, item) => ListTile(title: Text(item)),
       ),
     );
   }
